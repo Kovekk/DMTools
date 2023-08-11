@@ -1,0 +1,173 @@
+{
+  "adventures": [
+    {
+      "name": "first_adventure",
+      "description": "Describe your adventure, maybe layout your advnture or something.",
+      "encounters": [
+        {
+          "name": "first_encounter",
+          "description": "Sample description",
+          "monsters": [
+            {
+              "name": "monster_1",
+              "cr": 1,
+              "xp": 500,
+              "amount": 2
+            },
+            {
+              "name": "monster_2",
+              "cr": 2,
+              "xp": 1000,
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "players": [
+        {
+          "player_name": "Robert",
+          "character_name": "Kovekk",
+          "race": {
+            "name": "Aarocokra",
+            "subrace": null
+          },
+          "classes": [
+            {
+              "name": "Artificer",
+              "lvl": 3,
+              "subclass": "Battle Smith"
+            },
+            {
+              "name": "Warlock",
+              "lvl": 1,
+              "sublcass": "Hexblade"
+            }
+          ],
+          "hp": 64,
+          "ac": 17,
+          "stats": {
+            "str": 12,
+            "dex": 15,
+            "con": 17,
+            "wis": 15,
+            "int": 18,
+            "cha": 13
+          },
+          "features": [
+            {
+              "name": "rage",
+              "description": "dnd description shortened :)",
+              "save_stat": null
+            }
+          ],
+          "spells": [
+            {
+              "name": "Fireball",
+              "description": "Something wild!",
+              "save_stat": "dex"
+            }
+          ]
+        }
+      ],
+      "npcs": {
+        "basic": [
+          {
+            "name": "first_npc",
+            "race": "Human",
+            "appearance": "some description",
+            "portrayal": "another description",
+            "storyhook": "some kind of story or description"
+          }
+        ],
+        "full": [
+          {
+            "name": "Akyrra",
+            "race": "Halfling",
+            "classes": [
+              {
+                "name": "Artificer",
+                "lvl": 3,
+                "subclass": "Battle Smith"
+              },
+              {
+                "name": "Warlock",
+                "lvl": 1,
+                "sublcass": "Hexblade"
+              }
+            ],
+            "hp": 64,
+            "ac": 17,
+            "stats": {
+              "str": 12,
+              "dex": 15,
+              "con": 17,
+              "wis": 15,
+              "int": 18,
+              "cha": 13
+            },
+            "features": [
+              {
+                "name": "rage",
+                "description": "dnd description shortened :)",
+                "save_stat": null
+              }
+            ],
+            "spells": [
+              {
+                "name": "Fireball",
+                "description": "Something wild!",
+                "save_stat": "dex"
+              }
+            ],
+            "background": "Pirate",
+            "alignment": "Chaotic Neutral",
+            "proficiencies": {
+              "skills": [
+                "Acrobatics",
+                "Insight",
+                "Stealth"
+              ],
+              "tools": [
+                "Mount (Water)",
+                "Theives tools",
+                "Dragonchess set",
+                "Wood carvers tools",
+                "martial weapons",
+                "heavy armor"
+              ],
+              "languages": [
+                "Common",
+                "Elvish",
+                "Draconic"
+              ],
+              "appearance": "description",
+              "protrayal": "description",
+              "history": "story/description",
+              "inventory": [
+                "weapons",
+                "armor",
+                "magic items"
+              ],
+              "currency": {
+                "platinum": 32,
+                "gold": 14,
+                "silver": 64,
+                "copper": 12
+              }
+            }
+          }
+        ]
+      },
+      "images": [
+        "to be determined"
+      ],
+      "journal": [
+        {
+          "session_date": "7/2/23",
+          "entry_name": "Sample entry name",
+          "text": "This could really be as long as I want it to be."
+        }
+      ]
+    }
+  ]
+}
