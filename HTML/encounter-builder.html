@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Robert Lowry">
+        <meta name="description" content="Lesson 4 for Robert Lowry in WDD 230: Web Frontend Developoment at BYUI">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>DMTools | Encounter Builder</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@700&Bebas+Neue&family=Josefin+Sans&family=Rubik:wght@700&&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>DMTools</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="npcs.html">NPCs</a></li>
+                <li><a href="encounter-builder.html">Encounters</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="vault.html">The Vault</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <main id="encounterPage">
+            <div id=filtersort>
+              <div id="sort">
+                <h2>Sort</h2>
+                <label><input type="radio" value="cr" name="sort" checked></input>CR</label>
+                <label><input type="radio" value="name" name="sort"></input>Name</label>
+              </div>
+            
+              <div id="filter">
+                <h2>Filter</h2>
+                <label><input type="checkbox" value="0" name="filter"></input>0</label>
+                <label><input type="checkbox" value="0.25" name="filter"></input>1/4</label>
+                <label><input type="checkbox" value="0.5" name="filter"></input>1/2</label>
+                <label><input type="checkbox" value="1" name="filter"></input>1</label>
+                <label><input type="checkbox" value="2" name="filter"></input>2</label>
+                <label><input type="checkbox" value="3" name="filter"></input>3</label>
+                <label><input type="checkbox" value="4" name="filter"></input>4</label>
+                <label><input type="checkbox" value="5" name="filter"></input>5</label>
+                <label><input type="checkbox" value="6" name="filter"></input>6</label>
+                <label><input type="checkbox" value="7" name="filter"></input>7</label>
+                <label><input type="checkbox" value="8" name="filter"></input>8</label>
+                <label><input type="checkbox" value="9" name="filter"></input>9</label>
+                <label><input type="checkbox" value="10" name="filter"></input>10</label>
+                <label><input type="checkbox" value="11" name="filter"></input>11</label>
+                <label><input type="checkbox" value="12" name="filter"></input>12</label>
+                <label><input type="checkbox" value="13" name="filter"></input>13</label>
+                <label><input type="checkbox" value="14" name="filter"></input>14</label>
+                <label><input type="checkbox" value="15" name="filter"></input>15</label>
+                <label><input type="checkbox" value="16" name="filter"></input>16</label>
+                <label><input type="checkbox" value="17" name="filter"></input>17</label>
+                <label><input type="checkbox" value="18" name="filter"></input>18</label>
+                <label><input type="checkbox" value="19" name="filter"></input>19</label>
+                <label><input type="checkbox" value="20" name="filter"></input>20</label>
+                <label><input type="checkbox" value="21" name="filter"></input>21</label>
+                <label><input type="checkbox" value="22" name="filter"></input>22</label>
+                <label><input type="checkbox" value="23" name="filter"></input>23</label>
+                <label><input type="checkbox" value="24" name="filter"></input>24</label>
+                <label><input type="checkbox" value="25" name="filter"></input>≥25</label>
+            </div>
+            </div>
+            
+            <div id="monsterList">
+              <h2 value="127">Monster List</h2>
+              <div id="monsterHeaders">
+                <h3>Monster Name</h3>
+                <h3>CR (XP)</h3>
+              </div>
+              <ul>
+                <li>
+                  <div id="monster">
+                    <h3>Monster Name</h3>
+                    <p>CR(XP)longer</p>
+                  </div>
+                  <button>+</button>
+            <!--       <button>&#128270</button> -->
+                </li>    
+                <li>
+                  <div id="monster">
+                    <h3>Monster Name</h3>
+                    <p>CR(XP)long</p>
+                  </div>
+                  <button>+</button>
+                </li>    
+                <li>
+                  <div id="monster">
+                    <h3>Monster Name</h3>
+                    <p>CR(XP)</p>
+                  </div>
+                  <button>+</button>
+                </li>    
+                <li>
+                  <div id="monster">
+                    <h3>Monster Name</h3>
+                    <p>CR(XP)</p>
+                  </div>
+                  <button>+</button>
+                </li>    
+              </ul>
+            </div>
+            
+            
+            <div id="encounter">
+              <h2>Encounter</h2>
+              <div id="encounterHeaders">
+                <h3>Monster Name</h3>
+                <h3>CR - Amount</h3>
+              </div>
+              <ul>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+                <li>
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                  <input type="number" min="1">
+                  <button>X</button>
+                </li>
+              </ul>
+              
+              
+              <div id="xpGoals">
+              <h3>XP Goals</h3>
+              <p>Easy:</p>
+              <p>300</p>
+              <p>Medium:</p>
+              <p>600</p>
+              <p>Hard:</p>
+              <p>900</p>
+              <p>Deadly:</p>
+              <p>1200</p>
+              <p>Daily budget:</p>
+              <p>4800</p>
+            </div>
+              <div id="difficulty">
+                <h4>Total XP:</h4>
+                <p>500</p>
+                <h4>Adjusted XP:</h4>
+                <p>1000</p>
+                <h4>Difficulty:</h4>
+                <p>Hard</p>
+               </div>
+              
+            </div>
+            
+            <div id="cardView">
+              <div class="selected">
+                <h2>Kovekk</h2>
+                <h3>Robert</h3>
+                <h4>High Elf</h4>
+                <h4>Rogue Thief<br>Fighter Champion</h4>
+                <p>AC: 16</p>
+                <p>Max HP: 134</p>
+                <p>lvl: 6</p>
+              </div>
+              <div>
+                <h2>Character Name</h2>
+                <h3>Player Name</h3>
+                <h4>Race Subrace</h4>
+                <h4>Class Subclass<br>Class Subclass<br>Class Subclass</h4>
+                <p>AC: 16</p>
+                <p>HP: 101/134</p>
+                <p>DC: 14</p>
+              </div>
+              <div>
+                <h2>Character Name</h2>
+                <h3>Player Name</h3>
+                <h4>Race Subrace</h4>
+                <h4>Class Subclass<br>Class Subclass<br>Class Subclass</h4>
+                <p>AC: 16</p>
+                <p>HP: 101/134</p>
+                <p>DC: 14</p>
+              </div>
+              <div>
+                <h2>Character Name</h2>
+                <h3>Player Name</h3>
+                <h4>Race Subrace</h4>
+                <h4>Class Subclass<br>Class Subclass<br>Class Subclass</h4>
+                <p>AC: 16</p>
+                <p>HP: 101/134</p>
+                <p>DC: 14</p>
+              </div>
+            </div>
+            </main>
+
+
+
+
+
+
+
+          
+          <!-- <main id="encounter">
+          <div class="filterSort" id="filtersort">
+            <div class="filter" id="sort">
+              <h2>Sort</h2>
+              <label><input type="radio" value="cr" name="sort" checked></input>CR</label>
+              <label><input type="radio" value="name" name="sort"></input>Name</label>
+            </div>
+          
+            <div class="filter" id="filter">
+              <h2>Filter</h2>
+              <label><input type="checkbox" value="0" name="filter"></input>0</label>
+              <label><input type="checkbox" value="0.25" name="filter"></input>1/4</label>
+              <label><input type="checkbox" value="0.5" name="filter"></input>1/2</label>
+              <label><input type="checkbox" value="1" name="filter"></input>1</label>
+              <label><input type="checkbox" value="2" name="filter"></input>2</label>
+              <label><input type="checkbox" value="3" name="filter"></input>3</label>
+              <label><input type="checkbox" value="4" name="filter"></input>4</label>
+              <label><input type="checkbox" value="5" name="filter"></input>5</label>
+              <label><input type="checkbox" value="6" name="filter"></input>6</label>
+              <label><input type="checkbox" value="7" name="filter"></input>7</label>
+              <label><input type="checkbox" value="8" name="filter"></input>8</label>
+              <label><input type="checkbox" value="9" name="filter"></input>9</label>
+              <label><input type="checkbox" value="10" name="filter"></input>10</label>
+              <label><input type="checkbox" value="11" name="filter"></input>11</label>
+              <label><input type="checkbox" value="12" name="filter"></input>12</label>
+              <label><input type="checkbox" value="13" name="filter"></input>13</label>
+              <label><input type="checkbox" value="14" name="filter"></input>14</label>
+              <label><input type="checkbox" value="15" name="filter"></input>15</label>
+              <label><input type="checkbox" value="16" name="filter"></input>16</label>
+              <label><input type="checkbox" value="17" name="filter"></input>17</label>
+              <label><input type="checkbox" value="18" name="filter"></input>18</label>
+              <label><input type="checkbox" value="19" name="filter"></input>19</label>
+              <label><input type="checkbox" value="20" name="filter"></input>20</label>
+              <label><input type="checkbox" value="21" name="filter"></input>21</label>
+              <label><input type="checkbox" value="22" name="filter"></input>22</label>
+              <label><input type="checkbox" value="23" name="filter"></input>23</label>
+              <label><input type="checkbox" value="24" name="filter"></input>24</label>
+              <label><input type="checkbox" value="25" name="filter"></input>≥25</label>
+          </div>
+          </div>
+          
+          <div class="list" id="monsterList">
+            <h2 value="127">Monster List</h2>
+            <div id="monsterHeaders">
+              <h3>Monster Name</h3>
+              <h3>CR (XP)</h3>
+            </div>
+            <ul>
+              <li>
+                <div id="monster">
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)longer</p>
+                </div>
+                <button class="button">+</button>
+              </li>    
+              <li>
+                <div id="monster">
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)long</p>
+                </div>
+                <button class="button">+</button>
+              </li>    
+              <li>
+                <div id="monster">
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                </div>
+                <button class="button">+</button>
+              </li>    
+              <li>
+                <div id="monster">
+                  <h3>Monster Name</h3>
+                  <p>CR(XP)</p>
+                </div>
+                <button class="button">+</button>
+              </li>    
+            </ul>
+          </div>
+          
+          
+          <div class="list" id="encounter">
+            <h2>Encounter</h2>
+            <div id="encounterHeaders">
+              <h3>Monster Name</h3>
+              <h3>CR - Amount</h3>
+            </div>
+            <ul>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+              <li>
+                <h3>Monster Name</h3>
+                <p>CR(XP)</p>
+                <input type="number" min="1">
+                <button class="button">X</button>
+              </li>
+            </ul>
+            
+            
+            <div id="xpGoals">
+            <h3>XP Goals</h3>
+            <p>Easy:</p>
+            <p>300</p>
+            <p>Medium:</p>
+            <p>600</p>
+            <p>Hard:</p>
+            <p>900</p>
+            <p>Deadly:</p>
+            <p>1200</p>
+            <p>Daily budget:</p>
+            <p>4800</p>
+          </div>
+            <div id="difficulty">
+              <h4>Total XP:</h4>
+              <p>500</p>
+              <h4>Adjusted XP:</h4>
+              <p>1000</p>
+              <h4>Difficulty:</h4>
+              <p>Hard</p>
+             </div>
+            
+          </div>
+          
+          <div id="cardView">
+            <div class="selected">
+              <h2>Kovekk</h2>
+              <h3>Robert</h3>
+              <h4>High Elf</h4>
+              <h4>Rogue Thief<br>Fighter Champion</h4>
+              <p>AC: 16</p>
+              <p>Max HP: 134</p>
+              <p>lvl: 6</p>
+            </div>
+            <div>
+              <h2>Character Name</h2>
+              <h3>Player Name</h3>
+              <h4>Race Subrace</h4>
+              <h4>Class Subclass<br>Class Subclass<br>Class Subclass</h4>
+              <p>AC: 16</p>
+              <p>HP: 101/134</p>
+              <p>DC: 14</p>
+            </div>
+            <div>
+              <h2>Character Name</h2>
+              <h3>Player Name</h3>
+              <h4>Race Subrace</h4>
+              <h4>Class Subclass<br>Class Subclass<br>Class Subclass</h4>
+              <p>AC: 16</p>
+              <p>HP: 101/134</p>
+              <p>DC: 14</p>
+            </div>
+            <div>
+              <h2>Character Name</h2>
+              <h3>Player Name</h3>
+              <h4>Race Subrace</h4>
+              <h4>Class Subclass<br>Class Subclass<br>Class Subclass</h4>
+              <p>AC: 16</p>
+              <p>HP: 101/134</p>
+              <p>DC: 14</p>
+            </div>
+          </div>
+          </main> -->
+    </body>
+</html>

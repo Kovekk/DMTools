@@ -1,0 +1,796 @@
+/* Styling the header */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    border-left: 2px solid gray;
+    padding: 4px 0;
+}
+
+nav ul li:nth-child(1) {
+    border-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-family: tektur;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: #EFF8FA;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    color: #F60909;
+    font-family: 'Tektur', cursive;
+    margin: 0;
+}
+
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Styling the cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+}
+
+.cards div {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.cards h2 {
+    margin: 10px 44%;
+    font-size: 30px;
+    color: #1D6CA0;
+}
+
+.cards div h2 {
+    margin: 12px 0 5px 0;
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+}
+
+.cards div h3 {
+    margin-top: 5px; /* Add some spacing */
+    font-size: 18px; /* Increase font size */
+}
+
+.cards div h4 {
+    margin: 2px 0;
+    font-size: 16px; /* Increase font size */
+    color: #666;
+    line-height: 20px;
+  }
+
+.cards div p {
+    margin: 5px 0; /* Add some spacing */
+}
+
+.cards div {
+    transition: box-shadow 0.3s ease; /* Add a subtle box shadow transition on hover */
+}
+
+.cards div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply a slight box shadow on hover */
+    transform: translateY(-2px); /* Add a subtle lift effect on hover */
+    cursor: pointer;
+}
+
+.cards div.selected {
+    border: 2px solid #444;
+    transform: translateY(-2px);
+}
+
+/* Styling buttons */
+.button {
+    font-family: 'Rubik';
+    border: 1px solid #247DB8;
+    color: #247DB8;
+    background-color: rgba(0,0,0,0);
+    border-radius: 3px;
+    padding: 0px 8px 1px 8px;
+    font-size: 23px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+  }
+
+/* Styling the player page */
+
+#playerPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Styling the player page cards */
+#playerPage div.cards div {
+    height: 200px;
+    max-width: 48%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#playerPage div.cards div h2 {
+    grid-column: 1 / -1; /* Stretch across all columns */
+}
+
+#playerPage div.cards div h3 {
+    grid-column: 1 / -1; /* Stretch across all columns */
+
+}
+
+#playerPage div.cards div h4 {
+    grid-column: 1 / -1; /* Stretch across all columns */
+
+}
+
+#playerPage div.cards div p {
+    grid-column: span 2;
+    grid-row: 6; /* Shorthand for grid-row: 6 / 7 */
+
+}
+
+/* Styling the player page detailed view */
+#detailedView {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 11px 20px;
+}
+
+#detailedView h2 {
+    grid-column: 2 / -1; /* Stretch across columns 2 to the end */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#detailedView h4:nth-child(3) {
+    grid-column: span 2; /* Stretch across 2 columns */
+}
+
+#detailedView h4:nth-child(4) {
+    grid-column: span 3; /* Stretch across 3 columns */
+}
+
+#detailedView h4:nth-child(8) {
+    grid-column: span 3; /* Stretch across 3 columns */
+    text-align: left;
+    padding-left: 0; /* Remove padding */
+}
+
+#detailedView p:nth-child(9) {
+    grid-column: span 3; /* Stretch across 3 columns */
+    margin: 10px 0; /* Add some spacing */
+}
+
+#detailedView h4 {
+    line-height: 20px;
+}
+
+#detailedView ul {
+    grid-column: 1; /* Stretch across the first column */
+    grid-row: 1 / 8; /* Stretch across all rows */
+    list-style: none;
+    padding: 0;
+}
+
+#detailedView ul li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px; /* Add some spacing */
+    margin-bottom: 10px; /* Add some spacing between items */
+    /* background-color: #f9f9f9; */
+}
+
+#detailedView ul li h5 {
+    margin: 0 4px;
+    text-align: left;
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+}
+
+#detailedView ul li p {
+    margin: 5px 0;
+    font-size: 18px; /* Increase font size */
+}
+
+
+/* Styling the NPC page */
+
+#NPCs {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* styling the cards for npc page */
+#NPCs div.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#NPCs div.cards div {
+    display: flex;
+    flex-direction: column;
+    max-width: 98%
+}
+
+#NPCs div.cards h2 {
+    grid-column: 1/4;
+    padding: 10px 35% 5px 35%;
+    margin: auto;
+}
+
+/* Styling the Encounter page */
+
+/* #encounter {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.list {
+    width: 30%;
+    margin: 0 30px;
+}
+
+.list h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: #1D6CA0;
+}
+
+.list ul {
+    height: 620px;
+    overflow-y: scroll;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.list ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.list ul li:nth-child(even) {
+    background-color: #DEE5E7;
+}
+
+.list ul li h3 {
+    margin: 3px;
+}
+
+.list ul li div p {
+    margin: 0 5px 0 auto;
+    text-align: right;
+}
+
+.list ul li button {
+    position: static;
+    font-size: 15px;
+}
+
+.list div h3 {
+    margin: 0;
+}
+
+#monsterList ul li button.button {
+    padding: 0px 5px 1px 5px;
+}
+
+#monsterList ul li div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#monsterHeaders {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 4px;
+}
+
+#encounterHeaders {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 4px;
+}
+
+#encounter ul {
+    overflow-y: auto;
+    max-height: 170px;
+}
+
+#encounter ul li button {
+    padding: 2px 6px;
+}
+
+#encounter {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+}
+
+#encounter h2, #encouterHeaders, #encotuner ul {
+    grid-column: 1/3;
+}
+
+.filterSort div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterSort h2 {
+    margin-bottom: 0;
+    color: #1D6CA0;
+} */
+
+/* where i gave up on cleaning my code */
+
+/* Styling the body */
+#encounterPage {
+  display: flex;
+  background-color: #EFF8FA;
+  width: 90%;
+  margin: auto;
+}
+
+#encounterPage p, #encounterPage label {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#monsterList, #encounter {
+  width: 30%;
+  margin: 0 30px;
+}
+
+#monsterList h2, #encounter h2 {
+  text-align: center;
+  margin: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  color: #1D6CA0;
+}
+
+#monsterList ul, #encounter ul {
+  height: 620px;
+  overflow-y: scroll;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+#encounter ul {
+  overflow-y: auto;
+  max-height: 170px;
+}
+
+
+#monsterList ul li, #encounter ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+/*   justify-content: space-between; */
+}
+
+#monsterList ul li:nth-child(even), #encounter ul li:nth-child(even) {
+  background-color: #DEE5E7;
+/*   background-color: #C6CBCC; */
+}
+
+#monsterList ul li h3, #encounter ul li h3 {
+  margin: 3px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#monsterList ul li div p, #encounter ul li p {
+  margin:  0 5px 0 auto;
+  text-align: right;
+}
+
+#monsterList ul li div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#sort {
+  display: flex;
+  flex-direction: column;
+}
+
+#filter {
+  display: flex;
+  flex-direction: column;
+}
+
+#filtersort {
+  width: 80px;
+}
+
+#monsterList ul li button, #encounter ul li button {
+  margin: 5px;
+}
+
+#encounter ul li input {
+  width: 40px;
+  margin: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+#encounter ul li button, #monsterList ul li button {
+  font-family: 'Rubik';
+  border: 1px solid #247DB8;
+  color: #247DB8;
+  background-color: rgba(0,0,0,0);
+/*   background-color: #247DB8;
+  border: 0;
+  color: white; */
+  border-radius: 3px;
+}
+
+#encounter ul li button:hover, #monsterList ul li button:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.1);
+/*   background-color: #1D699B; */
+}
+
+#monsterList ul li button {
+  padding: 0px 5px 1px 5px;
+  font-size: 15px;
+}
+
+#encounter ul li button {
+  
+  padding: 2px 6px;
+}
+
+#monsterHeaders h3 {
+  margin: 0;
+}
+
+#encounterHeaders h3 {
+  margin: 0;
+}
+
+#sort h2, #filter h2 {
+  margin-bottom: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1D6CA0;
+}
+
+#monsterHeaders {
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: space-between;
+  padding-right: 60px;
+  padding-left: 4px;
+}
+
+#encounterHeaders {
+  display: flex;
+  font-family: 'Josefin Sans', snas-serif;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 4px;
+}
+
+#xpInfo {
+  display: grid;
+  grid-template-columns: 55% auto;
+/*   grid-template-columns: 48% auto; */
+  grid-template-rows: 200px auto;
+  width: 35%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#xpInfo div:nth-child(1) {
+  display: grid;
+  grid-template-columns: auto 40px;
+  height: fit-content;
+}
+
+#xpGoals h3 {
+  grid-column: 1/3;
+  margin: 10px 0px;
+  text-align: center;
+  color: #1D6CA0;
+}
+
+#xpGoals p {
+  margin: 7px 0px;
+}
+
+#xpInfo h4 {
+  margin: 5px 0;
+}
+
+#xpGoals {
+  display: grid;
+  grid-template-columns: 120px 50px;
+  height: fit-content;
+  padding: 0 0 5px 6px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#xpInfo div:nth-child(2) p:nth-child(8) {
+  margin-bottom: 25px;
+}
+
+#xpInfo div:nth-child(3) {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: fit-content;
+  text-align: center;
+}
+
+#xpInfo {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: 200px auto;
+    width: 35%;
+}
+
+#xpInfo div:nth-child(1) {
+    display: grid;
+    grid-template-columns: auto 40px;
+    height: fit-content;
+}
+
+#xpGoals h3 {
+    grid-column: 1/3;
+    margin: 10px 0px;
+    text-align: center;
+    color: #1D6CA0;
+}
+  
+#xpGoals p {
+    margin: 7px 0px;
+}
+  
+#xpInfo h4 {
+    margin: 5px 0;
+}
+  
+#xpGoals {
+    display: grid;
+    grid-template-columns: 120px 50px;
+    height: fit-content;
+    padding: 0 0 5px 6px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+  
+#xpInfo div:nth-child(2) p:nth-child(8) {
+    margin-bottom: 25px;
+}
+  
+#xpInfo div:nth-child(3) {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    text-align: center;
+}
+
+#saveEncounter {
+    grid-column: 1/3;
+    width: fit-content;
+    margin: auto auto auto 41%;font-family: 'Rubik';
+    border: 1px solid #247DB8;
+    color: #247DB8;
+    background-color: rgba(0,0,0,0);
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  #saveEncounter:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  /* Style for each character card */
+  #cardView {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+  }
+  
+  #cardView div {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Equivalent to "auto auto auto auto auto auto" */
+    width: 100%;
+    max-width: 49%; /* Adjust the width as per your preference */
+    height: 200px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  #cardView div h2 {
+    grid-column: 1 / -1; /* Stretch across all columns */
+    margin-bottom: 5px; /* Add some spacing */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  
+  #cardView div h3 {
+    grid-column: 1 / -1; /* Stretch across all columns */
+    margin-top: 5px; /* Add some spacing */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #cardView div h4 {
+    grid-column: 1 / -1; /* Stretch across all columns */
+    margin: 2px 0;
+    font-size: 16px; /* Increase font size */
+    color: #666;
+    line-height: 20px;
+  }
+  
+  #cardView div p {
+    grid-column: span 2;
+    grid-row: 6; /* Shorthand for grid-row: 6 / 7 */
+    margin: 5px 0; /* Add some spacing */
+  }
+  
+  #cardView div {
+    transition: box-shadow 0.3s ease; /* Add a subtle box shadow transition on hover */
+  }
+  
+  #cardView div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply a slight box shadow on hover */
+    transform: translateY(-2px); /* Add a subtle lift effect on hover */
+    cursor: pointer;
+  }
+  
+  #encounter {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+  }
+  
+  #encounter h2, #encounterHeaders, #encounter ul {
+    grid-column: 1/3;
+  }
+  
+  #difficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #difficulty h4 {
+    margin: 3px;
+  }
+  
+  #difficulty p {
+    margin: 3px 3px 25px 3px;
+  }
+
+  /* Styling the journal page */
+
+  #journal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #entryList {
+    width: 30%;
+  }
+  
+  #entryList h2 {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #1D6CA0;
+  }
+  
+  #entryList ul {
+    height: 620px;
+    overflow-y: auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  #entryList ul li:nth-child(even) {
+    background-color: #DEE5E7;
+  }
+  
+  #entryList ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #entryList ul li h3 {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0 0 0;
+  }
+  
+  #entryList ul li p {
+    margin: 3px 10px 0 0;
+    padding: 0 0 5px 0;
+  }
+  
+  #entry {
+    width: 40%;
+    margin: 0 30px;
+  }
+  
+  #entry h2 {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #1D6CA0;  
+  }
+  
+  #entry h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1D6CA0
+  }
+  
+  #entry p {
+    font-family: "Josefin Sans";
+  }
