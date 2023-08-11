@@ -1,0 +1,1 @@
+This program is going to be made in python for rasberry pi. The hope is to eventually add this  to the dice box that I will have 3d printed.
