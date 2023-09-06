@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="fonts">
+    <file>JosefinSans-Regular.ttf</file>
+    <file>Tektur-VariableFont_wdth,wght.ttf</file>
+  </qresource>
+</RCC>
