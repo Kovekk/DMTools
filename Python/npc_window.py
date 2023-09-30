@@ -3,16 +3,15 @@ from PyQt6.QtGui import QIcon
 from PyQt6 import uic
 import sys
 
-class PcWindow(QWidget):
+class NpcWindow(QWidget):
 
     def __init__(self, qtstackedwidget):
         super().__init__()
-        uic.loadUi("ui_files/DMTools_pc.ui", self)
+        uic.loadUi("ui_files/DMTools_npc.ui", self)
         widget_stack = qtstackedwidget
-        # campaign_info = campaign_json
 
         self.vault_menu_btn.clicked.connect(lambda: self.change_page(widget_stack, 0))
-        self.npc_menu_btn.clicked.connect(lambda: self.change_page(widget_stack, 2))
+        self.pc_menu_btn.clicked.connect(lambda: self.change_page(widget_stack, 1))
 
     def change_page(self, widget, index_num):
         widget.setCurrentIndex(index_num)

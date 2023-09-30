@@ -14,7 +14,7 @@
    <string>DMTools</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">font: 14pt &quot;Josefin Sans&quot;;</string>
+   <string notr="true">font: 12pt &quot;Josefin Sans&quot;;</string>
   </property>
   <widget class="QPushButton" name="vault_menu_btn">
    <property name="geometry">
@@ -242,7 +242,7 @@ QPushButton:hover{
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>83</y>
+     <y>80</y>
      <width>281</width>
      <height>16</height>
     </rect>
@@ -261,7 +261,7 @@ QPushButton:hover{
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>110</y>
+     <y>104</y>
      <width>281</width>
      <height>20</height>
     </rect>
@@ -280,7 +280,7 @@ QPushButton:hover{
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>146</y>
+     <y>133</y>
      <width>281</width>
      <height>20</height>
     </rect>
@@ -296,7 +296,7 @@ QPushButton:hover{
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>174</y>
+     <y>155</y>
      <width>281</width>
      <height>20</height>
     </rect>
@@ -431,8 +431,8 @@ border-radius: 4px;</string>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>201</y>
+     <x>480</x>
+     <y>180</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -445,9 +445,9 @@ border-radius: 4px;</string>
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>223</y>
+     <y>200</y>
      <width>281</width>
-     <height>258</height>
+     <height>281</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -462,7 +462,7 @@ border-radius: 4px;</string>
       <x>0</x>
       <y>0</y>
       <width>279</width>
-      <height>256</height>
+      <height>279</height>
      </rect>
     </property>
    </widget>

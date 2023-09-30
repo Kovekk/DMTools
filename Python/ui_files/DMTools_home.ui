@@ -14,7 +14,7 @@
    <string>DMTools</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">font: 16pt &quot;Franklin Gothic Medium&quot;;</string>
+   <string notr="true">font: 14pt &quot;Josefin Sans&quot;;</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -46,7 +46,7 @@ Your very best friend!</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 14pt &quot;Franklin Gothic Medium&quot;;</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>OR</string>
@@ -61,6 +61,9 @@ Your very best friend!</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">padding-top: 2px;</string>
+   </property>
    <property name="text">
     <string>Create a new campaign</string>
    </property>
@@ -73,6 +76,9 @@ Your very best friend!</string>
      <width>261</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding-top: 2px;</string>
    </property>
    <property name="text">
     <string>Select a current campaign</string>
@@ -88,7 +94,7 @@ Your very best friend!</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 14pt &quot;Franklin Gothic Medium&quot;;</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>No campaign selected</string>
@@ -105,6 +111,9 @@ Your very best friend!</string>
      <width>141</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding-top: 2px;</string>
    </property>
    <property name="text">
     <string>Start session</string>

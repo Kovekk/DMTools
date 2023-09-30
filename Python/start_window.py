@@ -10,12 +10,12 @@ class StartWindow(QWidget):
         uic.loadUi("ui_files/DMTools_home.ui", self)
         widget_stack = qtstackedwidget
 
-        self.start_btn.clicked.connect(lambda: self.start(qtstackedwidget))
+        self.start_btn.clicked.connect(lambda: self.change_page(widget_stack, 1))
 
 
 
-    def start(self, widget):
-        widget.setCurrentIndex(1)
+    def change_page(self, widget, index_num):
+        widget.setCurrentIndex(index_num)
 
 
 
